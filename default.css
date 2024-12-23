@@ -57,7 +57,7 @@ ul {
 }
 
 h1 {
-  font-size: 56px;
+  font-size: 48px;
 }
 h2 {
   font-size: 36px;
@@ -109,7 +109,7 @@ h6 {
   box-shadow: 13px 1px 22px -1px rgba(0, 0, 0, 0.23);
 
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: .5fr 1fr;
   grid-template-areas:
     "nav-wrapper nav-wrapper"
     "left-column right-column";
@@ -228,16 +228,16 @@ h6 {
   padding-bottom: 100px;
 }
 
-#preview-shadow {
+/* #preview-shadow {
   background-color: var(--previewShadow);
   width: 300px;
   height: 180px;
   padding-left: 30px;
   padding-top: 30px;
-}
+} */
 
 #preview {
-  width: 300px;
+  width: 500px;
   border: 1.5px solid #17a2b8;
   background-color: var(--previewBg);
   padding: 15px;
@@ -284,7 +284,6 @@ h6 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   padding-bottom: 50px;
-  padding-top: 50px;
   gap: 100px;
 }
 
@@ -402,5 +401,19 @@ h6 {
 
   .right-column {
     justify-content: center;
+    padding-top: 0px;
+  }
+
+  #preview {
+    width: 300px;
+  }
+
+  .about-wrapper {
+    gap:10px;
+    padding-top: 10px;
+  }
+
+  #skills, ul, li {
+    font-size: 14px;
   }
 }
